@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Book Appointment">
+
+        <lightning-input label="Patient Id" value={patientId} onchange={handlePatient}></lightning-input>
+        <lightning-input label="Doctor Id" value={doctorId} onchange={handleDoctor}></lightning-input>
+        <lightning-input type="date" label="Appointment Date" value={appDate} onchange={handleDate}></lightning-input>
+        <lightning-input label="Reason (Specialization)" value={reason} onchange={handleReason}></lightning-input>
+
+        <lightning-button label="Create Appointment" variant="brand" onclick={createApp}></lightning-button>
+
+    </lightning-card>
+</template>

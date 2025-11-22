@@ -1,0 +1,11 @@
+<template>
+    <lightning-input label="Search Patient" value={searchKey} onchange={handleChange}></lightning-input>
+
+    <template if:true={patients}>
+        <lightning-datatable 
+            key-field="Id"
+            data={patients}
+            columns={columns}>
+        </lightning-datatable>
+    </template>
+</template>
